@@ -1,6 +1,6 @@
 # Criptografia
 
-Este conceito de segurança, pode ser aplicado em qualquer banco de dados, sendo PostgreSQL, MySQL, MariaDB,etc. Mas mesmo assim, é sempre importante termos uma palavra em nossa cabeça enquanto estamos fazendo bancos de dados (e aplicações no geral) que irão para a produção, que é a CRIPTOGRAFIA!
+Este conceito de segurança, pode ser aplicado em qualquer banco de dados, sendo PostgreSQL, MySQL, MariaDB, etc. Mas mesmo assim, é sempre importante termos uma palavra em nossa cabeça enquanto estamos fazendo bancos de dados (e aplicações no geral) que irão para a produção, que é a CRIPTOGRAFIA!
 
 Vamos supor que o seu banco de dados atual é invadido (Como o banco de dados da Vakinha ou de até mesmo, do Linkedin). O invasor vai conseguir ver todos os dados, incluindo o nome, sobrenome e idade, que não são dados tão importantes, mas, e se lá estivesse um email com uma senha?
 
@@ -8,7 +8,7 @@ A maioria dos usuários, tem uma má prática de ter a mesma senha em vários se
 
 ## Mas como podemos resolver esse problema?
 
-Simples!, com criptografia simetrica e hasheada.
+Simples! Com criptografia simétrica e hasheada.
 
 A criptografia é o ato de transformar uma mensagem, em uma outra mensagem, mas muito mais difícil de entender, ou que é impossível de entender se não tivermos a chave da criptografia, onde que se aplicarmos essa chave da criptografia na mensagem criptografada, iremos receber a mensagem original.
 
@@ -30,13 +30,13 @@ Como você pode ver, é ilegível a segunda mensagem, mas como você pode ter pe
 
 ## Criptografia Simétrica
 
-A Criptografia simétrica é exatamente esta tipo de criptografia apresentada acima, onde podemos encriptar a mensagem e descriptografar ela depois, mas é claro, há algorítimos MUITO mais complexos que o ROT13. O mais conhecido é o AES, que recebe a mensagem, e dois parâmetros, um de 32 caracteres hexadecimais, e o outro de 64 caracteres hexadecimais.
+A Criptografia simétrica é exatamente este tipo de criptografia apresentada acima, onde podemos encriptar a mensagem e descriptografar ela depois, mas é claro, há algorítimos MUITO mais complexos que o ROT13. O mais conhecido é o AES, que recebe a mensagem, e dois parâmetros, um de 32 caracteres hexadecimais, e o outro de 64 caracteres hexadecimais.
 
-Assim, em uma aplicação usando qualquer stack de programação web (Nodejs, PHP, Rails,etc), podemos enviar o dado normal do frontend (tela do usuário) para o backend (servidor), e ele cuidará de criptografar o dado e escrever no banco de dados. Depois disso, o frontend pode requisitar o dado novamente, e o backend pegará o dado criptografado, descriptografará ele e enviará para o frontend.
+Assim, em uma aplicação usando qualquer stack de programação web (Nodejs, PHP, Rails, etc), podemos enviar o dado normal do frontend (tela do usuário) para o backend (servidor), e ele cuidará de criptografar o dado e escrever no banco de dados. Depois disso, o frontend pode requisitar o dado novamente, e o backend pegará o dado criptografado, descriptografará ele e enviará para o frontend.
 
 ## Criptografia Hasheada
 
-A criptografia hasheada, é uma criptografia muito mais forte que a criptografia simetrica, pois quando a mensagem é criptografada, não é possível descriptografar, apenas podemos pegar a mesma mensagem que foi usada, e comparar com a mensagem criptografada, que é chamada de **hash**. E se o resultado for verdadeiro, aquela é a mensagem original.
+A criptografia hasheada, é uma criptografia muito mais forte que a criptografia simétrica, pois quando a mensagem é criptografada, não é possível descriptografar, apenas podemos pegar a mesma mensagem que foi usada, e comparar com a mensagem criptografada, que é chamada de **hash**. E se o resultado for verdadeiro, aquela é a mensagem original.
 
 Um algorítimo de criptografia hasheada muito conhecido é o **Bcrypt**, que está disponível em diversas linguagens diferentes, ele é ótimo pois é muito prático, apenas precisamos definir a profundidade da criptografia, onde 10 já é um número ótimo e pronto, ele faz tudo para nós.
 
@@ -61,7 +61,7 @@ senao{
 
 ---
 
-E para criptografar, por exemplo, postagens privadas, podemos usar criptografia sincrona, pois precisaremos desse dado em texto puro novamente. Podemos fazer a query no banco de dados e descriptografar usando uma chave pública, e outra privada, que dependem de como é o seu projeto, quais campos tem,etc. No caso, apenas irei inventar duas váriáveis para cada chave.
+E para criptografar, por exemplo, postagens privadas, podemos usar criptografia síncrona, pois precisaremos desse dado em texto puro novamente. Podemos fazer a query no banco de dados e descriptografar usando uma chave pública, e outra privada, que dependem de como é o seu projeto, quais campos tem,etc. No caso, apenas irei inventar duas variáveis para cada chave.
 
 ```
 mensagem = SELECT mensagem FROM mensagens WHERE quem_mandou = [quem_mandou_a_mensagem]
