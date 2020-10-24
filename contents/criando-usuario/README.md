@@ -1,6 +1,6 @@
 # Criando nosso usuário no PostgreSQL
 
-Agora vamos criar o nosso próprio usuário no PostgreSQL para podermos criar bancos de dados, tabelas, inserir dados, ver dados,etc.
+Agora vamos criar o nosso próprio usuário no PostgreSQL para podermos criar bancos de dados, tabelas, inserir dados, ver dados, etc.
 
 # Linux
 

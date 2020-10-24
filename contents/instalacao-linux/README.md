@@ -28,7 +28,7 @@ Confirme a instalação:
 
 `rpm -qi postgresql11-server`
 
-Inialize o PostgreSQL:
+Inicialize o PostgreSQL:
 
 ```
 sudo /usr/pgsql-11/bin/postgresql-11-setup initdb
@@ -48,7 +48,7 @@ Agora digite `psql` para entrar no shell do PostgreSQL e poder futuramente, faze
 
 ---
 
-Pronto! o PostgreSQL foi instaldo no seu sistema!
+Pronto! o PostgreSQL foi instalado no seu sistema!
 
 ## Proximo =>
 

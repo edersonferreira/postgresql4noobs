@@ -1,6 +1,6 @@
 # PostgreSQL4Noobs
 
-O PostgreSQL é um banco de dados relacional muito conhecido, o banco de dados é onde guardados dados da nossa aplicação, como senhas, emails,etc. e neste 4noobs, iremos aprender como usar o banco PostgreSQL.
+O PostgreSQL é um banco de dados relacional muito conhecido, o banco de dados é onde guardamos dados da nossa aplicação, como senhas, emails, etc. Neste 4noobs, iremos aprender como usar o banco de dados PostgreSQL.
 
 ![Logo](assets/logo.png)
 
@@ -30,4 +30,4 @@ O PostgreSQL é um banco de dados relacional muito conhecido, o banco de dados �
 
 # Contribuindo
 
-Qualquer contribuição, tanto uma issue, pull request, dica,etc. é admirável, se você tem um conhecimento sobre PostgreSQL que não está aqui, faça um Pull Request de preferência com o conteúdo que deseja adicionar, mas se não tiver tempo ou disposição, faça uma issue com o tema em questão e se ele é Básico, Intermediário ou Avançado.
+Qualquer contribuição, tanto uma issue, pull request, dica, etc. é admirável, se você tem um conhecimento sobre PostgreSQL que não está aqui, faça um Pull Request de preferência com o conteúdo que deseja adicionar, mas se não tiver tempo ou disposição, faça uma issue com o tema em questão e se ele é Básico, Intermediário ou Avançado.

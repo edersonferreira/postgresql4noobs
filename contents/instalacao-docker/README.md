@@ -6,7 +6,7 @@ A instalação do PostgreSQL via docker-compose é bem simples.
 
 Crie um arquivo chamado `docker-compose.yml`
 
-dentro dele voce adiciona o conteudo abaixo:
+Dentro dele voce adiciona o conteúdo abaixo:
 
 ```
 version: '3.5'
@@ -54,13 +54,13 @@ volumes:
 - `networks`, networks a serem criadas dentro da stack.
 - `volumes`, (armazenamentos) a serem criadas dentro da stack.
 
-## Execulte esse arquivo usando
+## Execute esse arquivo usando
 
 `docker-compose up -d `
 
 - `-d`, é pra esconder os logs dos containers.
 
-## para parar os containers via docker-compose
+## Para parar os containers via docker-compose
 
 `docker-compose down`
 
